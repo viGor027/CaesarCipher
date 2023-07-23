@@ -1,0 +1,4 @@
+.idea
+venv
+.pre-commit-config.yaml
+requirements.txt
