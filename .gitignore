@@ -3,3 +3,5 @@ venv
 .pre-commit-config.yaml
 requirements.txt
 sandbox.py
+__pycache__
+.pytest_chache
