@@ -1,5 +1,5 @@
 import pytest
-from cipher import Cipher
+from CaesarRefactor.logic.cipher import Cipher
 
 
 @pytest.mark.parametrize(

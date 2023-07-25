@@ -1,11 +1,11 @@
-from dataclasses import dataclass
-from constants import ASCII_RANGES, ASCII_RANGES_LENGTHS
+from CaesarCipher.logic.constants import ASCII_RANGES, ASCII_RANGES_LENGTHS
 
 
-@dataclass
 class Cipher:
-    message: str
-    shift: int
+    def __init__(self, message, shift):
+        self.message = message
+        self.shift = shift
+        self.encrypted_message = self.encrypt_message()
 
     def encrypt_message(self) -> str:
         message_table = list(self.message)

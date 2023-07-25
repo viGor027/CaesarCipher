@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<table class="content-table">
+    <thead>
+      <tr>
+        <th>Message</th>
+        <th>Shift</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for mess, shift  in messages %}
+      <tr>
+        <td>{{ mess }}</td>
+        <td>{{ shift }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  <button type="submit" class="btn">READ FROM JSON</button>
+  <button type="submit" class="btn">SAVE TO JSON</button>
+    <button type="submit" class="btn"><a href="/">MAIN</a></button>
+{% endblock %}
