@@ -9,7 +9,7 @@
       </tr>
     </thead>
     <tbody>
-    {% for mess, shift  in messages %}
+    {% for mess, shift, time  in messages %}
       <tr>
         <td>{{ mess }}</td>
         <td>{{ shift }}</td>
@@ -18,6 +18,6 @@
     </tbody>
   </table>
   <button type="submit" class="btn">READ FROM JSON</button>
-  <button type="submit" class="btn">SAVE TO JSON</button>
-    <button type="submit" class="btn"><a href="/">MAIN</a></button>
+  <button type="submit" class="btn"><a href="/download">SAVE TO JSON</a></button>
+  <button type="submit" class="btn"><a href="/">MAIN</a></button>
 {% endblock %}
