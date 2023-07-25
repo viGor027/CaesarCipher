@@ -41,3 +41,14 @@ def download():
     with open('/history.json', 'w') as outfile:
         json.dump(data_json, outfile)
     return send_file('/history.json', as_attachment=True)
+
+
+@index_blueprint.route('/upload', methods=["POST","GET"])
+def upload():
+    if request.method == "POST":
+        file = request.files['file'].read()
+        file_dct = json.loads(file.decode('utf-8'))
+        messages = []
+        for key in file_dct:
+            messages.append((file_dct[key][0], file_dct[key][1], key))
+    return render_template("history.html", messages=messages)

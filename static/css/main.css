@@ -174,3 +174,9 @@ h3{
     text-align: center;
     font-size: 12px;
 }
+
+
+.upload-file-form{
+    height: 30px;
+    display: block;
+}

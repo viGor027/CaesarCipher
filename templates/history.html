@@ -17,7 +17,11 @@
     {% endfor %}
     </tbody>
   </table>
-  <button type="submit" class="btn">READ FROM JSON</button>
+  <form class="upload-file-form" action = "/upload" method = "POST"
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file" />
+         <input type = "submit"/>
+  </form>
   <button type="submit" class="btn"><a href="/download">SAVE TO JSON</a></button>
   <button type="submit" class="btn"><a href="/">MAIN</a></button>
 {% endblock %}
