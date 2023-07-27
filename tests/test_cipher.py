@@ -1,5 +1,5 @@
 import pytest
-from CaesarRefactor.logic.cipher import Cipher
+from CaesarCipher.logic.cipher import Cipher
 
 
 @pytest.mark.parametrize(
@@ -58,10 +58,13 @@ def test_should_return_three_for_upper_edge_ascii_value():
     (
             (50, 1, 5, 55),
             (50, 1, 8, 48),
+            (52, 1, -2, 50),
             (70, 2, 5, 75),
             (70, 2, 22, 66),
+            (70, 2, -2, 68),
             (100, 3, 12, 112),
-            (100, 3, 23, 97)
+            (100, 3, 23, 97),
+            (112, 3, -2, 110)
     ),
 )
 def test_should_return_shifted_ascii_for_non_edge_ascii_entry(char_ascii, range_len_key, shift, expected_ascii):
@@ -73,14 +76,17 @@ def test_should_return_shifted_ascii_for_non_edge_ascii_entry(char_ascii, range_
     ('char_ascii', 'range_len_key', 'shift', 'expected_ascii'),
     (
             (48, 1, 0, 48),
+            (48, 1, -1, 57),
             (48, 1, 2, 50),
             (57, 1, 1, 48),
             (65, 2, 0, 65),
+            (65, 2, -1, 90),
             (65, 2, 2, 67),
             (90, 2, 1, 65),
             (97, 3, 0, 97),
             (97, 3, 2, 99),
-            (122, 3, 1, 97)
+            (122, 3, 1, 97),
+            (97, 3, -1, 122)
     ),
 )
 def test_should_return_shifted_ascii_for_edge_ascii_entry(char_ascii, range_len_key, shift, expected_ascii):
