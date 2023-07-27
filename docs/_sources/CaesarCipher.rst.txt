@@ -1,0 +1,37 @@
+CaesarCipher package
+====================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   CaesarCipher.logic
+
+Submodules
+----------
+
+CaesarCipher.app module
+-----------------------
+
+.. automodule:: CaesarCipher.app
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+CaesarCipher.conf module
+------------------------
+
+.. automodule:: CaesarCipher.conf
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: CaesarCipher
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>CaesarCipher.logic package &#8212; CaesarCipher 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=89b800e6" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=359c27e9"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">CaesarCipher 1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">CaesarCipher.logic package</a></li>
+      </ul>
+    </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+
+  <section id="caesarcipher-logic-package">
+<h1>CaesarCipher.logic package<a class="headerlink" href="#caesarcipher-logic-package" title="Permalink to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="module-CaesarCipher.logic.cipher">
+<span id="caesarcipher-logic-cipher-module"></span><h2>CaesarCipher.logic.cipher module<a class="headerlink" href="#module-CaesarCipher.logic.cipher" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="CaesarCipher.logic.cipher.Cipher">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">CaesarCipher.logic.cipher.</span></span><span class="sig-name descname"><span class="pre">Cipher</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/CaesarCipher/logic/cipher.html#Cipher"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CaesarCipher.logic.cipher.Cipher" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class implements logic of message encrypting/decrypting</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="CaesarCipher.logic.cipher.Cipher.encrypt_message">
+<span class="sig-name descname"><span class="pre">encrypt_message</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/CaesarCipher/logic/cipher.html#Cipher.encrypt_message"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CaesarCipher.logic.cipher.Cipher.encrypt_message" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="CaesarCipher.logic.cipher.Cipher.get_range_key">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_range_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">char_ascii</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/CaesarCipher/logic/cipher.html#Cipher.get_range_key"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CaesarCipher.logic.cipher.Cipher.get_range_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>gets: ascii code of a char
+returns: key to dictionary storing ranges in constants.py</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="CaesarCipher.logic.cipher.Cipher.shift_char">
+<span class="sig-name descname"><span class="pre">shift_char</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">char_ascii</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">range_len_key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/CaesarCipher/logic/cipher.html#Cipher.shift_char"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CaesarCipher.logic.cipher.Cipher.shift_char" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>char_ascii</strong> – ascii code of a char that we want to shift</p></li>
+<li><p><strong>range_len_key</strong> – key to range including that ascii code from constants.py</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>ascii code for a shifted char</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-CaesarCipher.logic.constants">
+<span id="caesarcipher-logic-constants-module"></span><h2>CaesarCipher.logic.constants module<a class="headerlink" href="#module-CaesarCipher.logic.constants" title="Permalink to this heading">¶</a></h2>
+<p>File stores constants that are used by the cipher.py file.
+To extend range of ascii values accepted by the logic:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>add another range in ASCII_RANGES</p></li>
+<li><p>add its length to ASCII_RANGES_LENGTHS with the key corresponding to 1)</p></li>
+</ol>
+</div></blockquote>
+</section>
+<section id="module-CaesarCipher.logic.get_time">
+<span id="caesarcipher-logic-get-time-module"></span><h2>CaesarCipher.logic.get_time module<a class="headerlink" href="#module-CaesarCipher.logic.get_time" title="Permalink to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="CaesarCipher.logic.get_time.get_current_time">
+<span class="sig-prename descclassname"><span class="pre">CaesarCipher.logic.get_time.</span></span><span class="sig-name descname"><span class="pre">get_current_time</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/CaesarCipher/logic/get_time.html#get_current_time"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#CaesarCipher.logic.get_time.get_current_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>is used in an app.py.
+returns current time</p>
+</dd></dl>
+
+</section>
+<section id="module-CaesarCipher.logic">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-CaesarCipher.logic" title="Permalink to this heading">¶</a></h2>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">CaesarCipher.logic package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-CaesarCipher.logic.cipher">CaesarCipher.logic.cipher module</a><ul>
+<li><a class="reference internal" href="#CaesarCipher.logic.cipher.Cipher"><code class="docutils literal notranslate"><span class="pre">Cipher</span></code></a><ul>
+<li><a class="reference internal" href="#CaesarCipher.logic.cipher.Cipher.encrypt_message"><code class="docutils literal notranslate"><span class="pre">Cipher.encrypt_message()</span></code></a></li>
+<li><a class="reference internal" href="#CaesarCipher.logic.cipher.Cipher.get_range_key"><code class="docutils literal notranslate"><span class="pre">Cipher.get_range_key()</span></code></a></li>
+<li><a class="reference internal" href="#CaesarCipher.logic.cipher.Cipher.shift_char"><code class="docutils literal notranslate"><span class="pre">Cipher.shift_char()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-CaesarCipher.logic.constants">CaesarCipher.logic.constants module</a></li>
+<li><a class="reference internal" href="#module-CaesarCipher.logic.get_time">CaesarCipher.logic.get_time module</a><ul>
+<li><a class="reference internal" href="#CaesarCipher.logic.get_time.get_current_time"><code class="docutils literal notranslate"><span class="pre">get_current_time()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-CaesarCipher.logic">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/CaesarCipher.logic.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">CaesarCipher 1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">CaesarCipher.logic package</a></li>
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2023, Wiktor.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.1.0.
+    </div>
+  </body>
+</html>
