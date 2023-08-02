@@ -23,9 +23,8 @@ def index():
         time = get_current_time()
         message_wrapped = Cipher(message, shift)
         messages.append((message_wrapped.encrypted_message, shift, time))
-        return render_template("index.html")
-    else:
-        return render_template("index.html")
+
+    return render_template("index.html")
 
 
 @index_blueprint.route('/history')
