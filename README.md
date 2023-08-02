@@ -1,6 +1,6 @@
-![img1](https://ibb.co/6RQpNvW)
+![img1](https://i.ibb.co/Z69wNHM/zdj1.png)
 
-![img2](https://ibb.co/wsSrgYX)
+![img2](https://i.ibb.co/jRyZfH2/zdj2.png)
 
 # Features
 
