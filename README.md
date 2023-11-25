@@ -2,15 +2,9 @@
 
 ![img2](https://i.ibb.co/jRyZfH2/zdj2.png)
 
-# Features
+# Overview
 
-- ciphering and deciphering with given shift
-- history of ciphered, deciphered messages
-- reading and saving history of encrypted/decrypted messages to/from json
-
-# Purpose
-
-As caesar cipher is basic concept, the goal of the project was to get familiar with tools that are used to produce software.
+Developed a Flask-based application for ciphering and deciphering messages using the Caesar cipher with a specified shift. The project includes a feature to track the history of ciphered and deciphered messages, along with the ability to read and save this history in JSON format. Implemented with a tech stack including Flask, pytest for testing, Sphinx for documentation, and pre-commit for code quality. The primary goal of the project was to gain hands-on experience with essential software development tools, emphasizing practical skills in the development process.
 
 ## Tech stack
 - Flask
